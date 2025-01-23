@@ -4,8 +4,8 @@
             <h2>{{ title }}</h2>
             <p>{{ message }}</p>
             <div class="modal-buttons">
-                <button class="btn cancel-btn" @click="handleCancel($event)">Cancel</button>
-                <button class="btn confirm-btn" @click="handleConfirm($event)">Confirm</button>
+                <button class="btn cancel-btn" @click="handleCancel($event)">Cancelar</button>
+                <button class="btn confirm-btn" @click="handleConfirm($event)">Confirmar</button>
             </div>
         </div>
 
@@ -14,8 +14,8 @@
             <form>
                 <slot></slot>
                 <div class="modal-buttons">
-                    <button type="reset" class="btn cancel-btn" @click="handleCancel($event)">Cancel</button>
-                    <button type="submit" class="btn confirm-btn" @click="handleConfirm($event)">Confirm</button>
+                    <button type="reset" class="btn cancel-btn" @click="handleCancel($event)">Cancelar</button>
+                    <button type="submit" class="btn confirm-btn" @click="handleConfirm($event)">Confirmar</button>
                 </div>
             </form>
         </div>

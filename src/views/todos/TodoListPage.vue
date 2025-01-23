@@ -1,6 +1,6 @@
 <template>
-    <HeaderComponent :title="'TO-DO | ' + findListById.listTitle.toUpperCase()" :hasAddButton="true"
-        :has-return-button="true" :is-todo="true" @add-new-to-do="createNewTodo" />
+    <HeaderComponent :title="this.title" :hasAddButton="true" :has-return-button="true" :is-todo="true"
+        @add-new-to-do="createNewTodo" />
 
     <MainContainerComponent>
         <TodoComponent :user-lists-of-todos="findListById?.todos" @toggle-todo-done="toggleTodoDone"

@@ -1,5 +1,5 @@
 <template>
-  <HeaderComponent title="LISTS | YOUR LISTS" :hasAddButton="true" @add-new-list="createNewList" />
+  <HeaderComponent :title="this.title" :hasAddButton="true" @add-new-list="createNewList" />
   <MainContainerComponent>
     <ListComponent @delete-list="deleteTodoList(index)" :user-lists-of-todos="userListsOfTodos" />
   </MainContainerComponent>
@@ -24,7 +24,7 @@ export default {
       return this.$store.getters.userListsOfTodos;
     },
     title() {
-      return "LISTS | YOUR LISTS";
+      return "SUAS LISTAS";
     }
   },
   methods: {

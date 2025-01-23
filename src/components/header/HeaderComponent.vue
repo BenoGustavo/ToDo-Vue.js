@@ -3,25 +3,16 @@
     <div class="title-container">
       <router-link :to="{ name: 'Home' }">
         <button @click="returnPage" v-if="hasReturnButton" class="return-btn">
-          <img src="../../assets/img/icons/ArrowCircleLeft.svg" alt="">
+          <img src="../../assets/img/icons/ArrowCircleLeft.svg" alt="Seta para a direita">
         </button>
       </router-link>
       <h1>{{ title }}</h1>
     </div>
 
-    <div class="button-container">
-      <div @click="deleteButtonEvent" v-if="hasDeleteButton" class="btn">
-        <div class="button-content">
-          <img src="../../assets/img/icons/Trash.svg" alt="Lata de lixo">
-          <p>Delete {{ isTodo ? "to-do" : "list" }}</p>
-        </div>
-      </div>
-
-      <div v-if="hasAddButton" class="btn">
-        <div @click="openModal" class="button-content">
-          <img src="../../assets/img/icons/PlusCircle.svg" alt="Botão redondo com um mais no meio">
-          <p>Add new {{ isTodo ? "to-do" : "list" }}</p>
-        </div>
+    <div v-if="hasAddButton" class="btn">
+      <div @click="openModal" class="button-content">
+        <img src="../../assets/img/icons/PlusCircle.svg" alt="Botão redondo com um mais no meio">
+        <p>Criar nova {{ isTodo ? "tarefa" : "lista" }}</p>
       </div>
     </div>
   </header>
