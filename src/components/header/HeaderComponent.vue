@@ -151,10 +151,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (max-width: 630px) {
-  .title-container {
+  div.title-container {
+    gap: 0.5rem;
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 0.8em;
+      font-weight: 400;
     }
   }
 }
