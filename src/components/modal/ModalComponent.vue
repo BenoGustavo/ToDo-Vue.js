@@ -77,6 +77,7 @@ export default {
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .modal-content {
