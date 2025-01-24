@@ -106,7 +106,7 @@ export default {
         return false;
       }
 
-      if (this.isTodo && this.listTitle.length > 30) {
+      if (this.isTodo && this.listTitle.length > 45) {
         this.$refs.err.textContent = "O nome da lista deve ter no máximo 30 caracteres";
         this.$refs.err.style.transform = "translateY(0)";
         this.$refs.err.style.opacity = 1;
@@ -125,7 +125,7 @@ export default {
       }
 
       //Validate if the name of the todo is more than 30 characters
-      if (this.isTodo && this.listTitle.length > 30) {
+      if (this.isTodo && this.listTitle.length > 100) {
         this.$refs.err.textContent = "O nome da tarefa deve ter no máximo 30 caracteres";
         this.$refs.err.style.transform = "translateY(0)";
         this.$refs.err.style.opacity = 1;
