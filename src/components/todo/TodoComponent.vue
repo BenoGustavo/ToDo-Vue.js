@@ -42,7 +42,7 @@ export default {
     computed: {
         modalMessage() {
             if (this.indexToDelete !== null) {
-                return `Tem certeza de que deseja deletar "${this.userListsOfTodos[this.indexToDelete].listTitle}"? Essa ação não poderá ser desfeita.`;
+                return `Tem certeza de que deseja deletar "${this.userListsOfTodos[this.indexToDelete].todoTitle}"? Essa ação não poderá ser desfeita.`;
             }
             return "";
         }
