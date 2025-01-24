@@ -2,8 +2,8 @@
     <ul v-if="userListsOfTodos != null && userListsOfTodos.length > 0">
         <li v-for="(todo, index) in userListsOfTodos" :key="todo.todoTitle + index" @click="toggleTodoDone(index)"
             :class="{ 'completed-todo': todo.done }">
-            <input type="checkbox" :id="todo.todoTitle + index" :name="todo.todoTitle + index" :checked="todo.done"
-                @click.stop>
+            <input disabled type="checkbox" :id="todo.todoTitle + index" :name="todo.todoTitle + index"
+                :checked="todo.done" @click.stop>
             <label :for="todo.todoTitle + index">{{ todo.todoTitle }}</label>
             <div @click.stop="confirmDelete(index)" class="delete-list">
                 <img src="../../assets/img/icons/Trash.svg" alt="Icone de lixo">

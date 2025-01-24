@@ -71,6 +71,7 @@ export default {
     openModal() {
       this.showModal = true;
       nextTick(() => {
+        this.$refs.titleInput.value = '';
         this.$refs.titleInput.focus();
       });
     },
@@ -137,6 +138,7 @@ export default {
     handleConfirm(event) {
       event.preventDefault();
 
+      // Validando
       if (!this.isTitleValid()) return;
       if (!this.isListValid()) return;
       if (!this.isTodoValid()) return;
