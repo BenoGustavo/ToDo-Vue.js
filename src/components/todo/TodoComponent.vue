@@ -69,6 +69,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 590px) {
+    section.container .empty-list-container img {
+
+        width: 100%;
+    }
+}
+
+
 input[type="checkbox"] {
     display: none;
 }

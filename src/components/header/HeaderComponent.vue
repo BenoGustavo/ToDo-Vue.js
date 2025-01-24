@@ -258,7 +258,6 @@ hr {
     color: var(--primary-color);
     margin: 0;
     padding: 0;
-    white-space: nowrap;
     display: block;
   }
 }
@@ -270,8 +269,8 @@ hr {
   cursor: pointer;
 
   img {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     transition: filter 0.3s ease-in-out;
   }
 
