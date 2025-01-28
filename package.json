@@ -9,6 +9,7 @@
     "lintAndServe": "vue-cli-service lint && vue-cli-service serve"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "gsap": "^3.12.7",
     "uuid": "^11.0.5",
